@@ -9,10 +9,14 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install --omit=dev
 
 # Copy source code
 COPY . .
+
+# Allow API base URL to be injected at build time
+ARG REACT_APP_API_URL=http://127.0.0.1:5000/api
+ENV REACT_APP_API_URL=${REACT_APP_API_URL}
 
 # Build the application
 RUN npm run build
