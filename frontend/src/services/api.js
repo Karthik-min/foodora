@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://13.62.228.227:5000/api';
 const IMAGE_BASE = API_URL.replace(/\/api\/?$/i, '');
 
 // Create axios instance
