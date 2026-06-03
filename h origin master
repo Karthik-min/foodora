@@ -1,0 +1,12 @@
+[33mcommit fcfb9d483c6b9d1e3959f5e2cd91873412215e73[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author:     Karthik Gowda <karthikgowda24122004@gmail.com>
+AuthorDate: Wed Jun 3 11:22:13 2026 +0530
+Commit:     Karthik Gowda <karthikgowda24122004@gmail.com>
+CommitDate: Wed Jun 3 11:22:13 2026 +0530
+
+    Verify Karthik author
+
+[1mdiff --git a/verify.txt b/verify.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8993d4a[m
+Binary files /dev/null and b/verify.txt differ
