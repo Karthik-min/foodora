@@ -21,18 +21,14 @@ steps:
       password: ${{ secrets.DOCKER_PASSWORD }}
 
   - name: Build Backend
-    run: |
-      docker build -t karthik2712/foodora-backend:latest ./backend
+    run: docker build -t karthik2712/foodora-backend:latest ./backend
 
   - name: Build Frontend
-    run: |
-      docker build -t karthik2712/foodora-frontend:latest ./frontend
+    run: docker build -t karthik2712/foodora-frontend:latest ./frontend
 
   - name: Push Backend
-    run: |
-      docker push karthik2712/foodora-backend:latest
+    run: docker push karthik2712/foodora-backend:latest
 
   - name: Push Frontend
-    run: |
-      docker push karthik2712/foodora-frontend:latest
+    run: docker push karthik2712/foodora-frontend:latest
 ```
